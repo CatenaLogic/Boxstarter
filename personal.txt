@@ -1,0 +1,45 @@
+# No Reboot
+# http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/personal.txt
+
+# Runtimes
+#==========
+cinst dotnet3.5
+cinst javaruntime
+
+# General
+#=========
+cinst google-chrome-x64
+cinst greenshot
+cinst vlc
+cinst teamviewer
+cinst skype
+cinst paint.net
+cinst 7zip
+cinst treesizefree
+cinst dropbox
+
+# Admin tools
+#=============
+cinst notepadplusplus.install
+cinst putty
+
+# Social
+#========
+cinst tweetdeck
+
+# Entertainment
+#===============
+cinst spotify
+
+# Games
+#=======
+cinst battle.net
+cinst steam
+
+# Work
+#======
+cinst office365homepremium
+
+# Tweaks
+#========
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"

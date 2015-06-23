@@ -15,16 +15,29 @@ cinst vlc
 cinst teamviewer
 cinst skype
 cinst paint.net
+cinst inkscape -pre
 cinst 7zip
+cinst treesizefree
+cinst dropbox
 
 # Dev tools
 #===========
+cinst visualstudio2015professional 
+cinst sqlserver2014express
 cinst git
-cinst sourcetree
 cinst notepadplusplus.install
+cinst resharper
+#cinst ghostdoc
+cinst beyondcompare
+cinst sourcetree
 cinst markdownpad2
 cinst innosetup
-cinst sqlserver2014express
+cinst nunit
+cinst putty
+cinst fiddler4
+
+# ANTS Performance Profiler / ANTS Memory Profiler / .NET Reflector
+cinst dotnetdeveloperbundle
 
 # Web dev tools
 #===============
