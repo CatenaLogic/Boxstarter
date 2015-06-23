@@ -4,6 +4,8 @@
 # Runtimes
 #==========
 cinst dotnet3.5
+cinst dotnet4.0
+cinst dotnet4.5
 cinst silverlight5developerruntime
 cinst javaruntime
 
@@ -23,6 +25,7 @@ cinst dropbox
 # Dev tools
 #===========
 cinst visualstudio2015professional 
+cinst xamarin-visualstudio
 cinst sqlserver2014express
 cinst git
 cinst notepadplusplus.install
@@ -35,6 +38,7 @@ cinst innosetup
 cinst nunit
 cinst putty
 cinst fiddler4
+#cinst finalbuilder
 
 # ANTS Performance Profiler / ANTS Memory Profiler / .NET Reflector
 cinst dotnetdeveloperbundle
@@ -44,6 +48,15 @@ cinst dotnetdeveloperbundle
 cinst nodejs
 cinst ruby
 
-# Tweaks
-#========
+# Tweaks & config (see http://boxstarter.org/WinConfig)
+#=================
+Enable-RemoteDesktop
+Enable-MicrosoftUpdate
+Install-WindowsUpdate -Full
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions -EnableShowFullPathInTitleBar
+Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
+
+# Final tweaks
+#==============
+Move-LibraryDirectory "Personal" "$env:UserProfile\onedrive\documents"

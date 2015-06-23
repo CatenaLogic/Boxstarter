@@ -1,42 +1,33 @@
 # No Reboot
-# http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/personal.txt
+# http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/personal_micro.txt
 
 # Runtimes
 #==========
 cinst dotnet3.5
 cinst dotnet4.0
 cinst dotnet4.5
-cinst javaruntime
 
 # General
 #=========
-cinst google-chrome-x64
 cinst greenshot
 cinst vlc
 cinst teamviewer
 cinst skype
 cinst paint.net
 cinst 7zip
-cinst treesizefree
-cinst dropbox
 
 # Admin tools
 #=============
 cinst notepadplusplus.install
-cinst putty
 
 # Social
 #========
-cinst tweetdeck
 
 # Entertainment
 #===============
-cinst spotify
 
 # Games
 #=======
-cinst battle.net
-cinst steam
 
 # Work
 #======
@@ -44,11 +35,9 @@ cinst office365homepremium
 
 # Tweaks & config (see http://boxstarter.org/WinConfig)
 #=================
-Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -Full
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions -EnableShowFullPathInTitleBar
+Set-ExplorerOptions -showHidenFilesFoldersDrives -showFileExtensions -EnableShowFullPathInTitleBar
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
 
 # Final tweaks
