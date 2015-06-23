@@ -1,4 +1,3 @@
-# No Reboot
 # http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/build_agent.txt
 
 # Runtimes
@@ -31,6 +30,10 @@ cinst nunit
 cinst nodejs
 cinst ruby
 
+# SDKs
+#======
+cinst silverlight5sdk
+
 # Build tools
 #=============
 cinst gitversion.portable -pre
@@ -41,6 +44,7 @@ cinst jiracli -pre
 cinst octopustools
 cinst install resharper-clt.portable
 cinst nuget.commandline
+cinst saxonhe
 
 # Need to install manually:
 # Certificates
@@ -48,12 +52,12 @@ cinst nuget.commandline
 # Signtool
 # Squirrel (custom version)
 
-
 # Tweaks & config (see http://boxstarter.org/WinConfig)
 #=================
 Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -Full
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions -EnableShowFullPathInTitleBar
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
+
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"

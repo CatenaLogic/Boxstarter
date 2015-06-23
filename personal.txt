@@ -1,4 +1,3 @@
-# No Reboot
 # http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/personal.txt
 
 # Runtimes
@@ -47,9 +46,10 @@ cinst office365homepremium
 Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -Full
-Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions -EnableShowFullPathInTitleBar
 Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
+
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 
 # Final tweaks
 #==============

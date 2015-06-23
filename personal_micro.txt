@@ -1,4 +1,3 @@
-# No Reboot
 # http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/personal_micro.txt
 
 # Runtimes
