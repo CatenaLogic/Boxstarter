@@ -1,0 +1,36 @@
+# No Reboot
+# http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/development.txt
+
+# Runtimes
+#==========
+cinst dotnet3.5
+cinst silverlight5developerruntime
+cinst javaruntime
+
+# General
+#=========
+cinst google-chrome-x64
+cinst greenshot
+cinst vlc
+cinst teamviewer
+cinst skype
+cinst paint.net
+cinst 7zip
+
+# Dev tools
+#===========
+cinst git
+cinst sourcetree
+cinst notepadplusplus.install
+cinst markdownpad2
+cinst innosetup
+cinst sqlserver2014express
+
+# Web dev tools
+#===============
+cinst nodejs
+cinst ruby
+
+# Tweaks
+#========
+Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
