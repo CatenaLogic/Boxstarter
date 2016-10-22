@@ -1,5 +1,9 @@
 # http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/development.txt
 
+# Tweaks
+#==============
+Move-LibraryDirectory "Personal" "$env:UserProfile\onedrive\documents"
+
 # Runtimes
 #==========
 cinst dotnet3.5
@@ -63,7 +67,3 @@ Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFile
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Atlassian\SourceTree\SourceTree.exe"
-
-# Final tweaks
-#==============
-Move-LibraryDirectory "Personal" "$env:UserProfile\onedrive\documents"
