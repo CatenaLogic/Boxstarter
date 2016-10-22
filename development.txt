@@ -20,7 +20,7 @@ cinst vlc
 #cinst teamviewer
 #cinst skype
 cinst paint.net
-cinst inkscape -pre
+cinst inkscape
 cinst 7zip
 cinst treesizefree
 cinst dropbox
