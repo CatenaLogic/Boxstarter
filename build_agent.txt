@@ -1,5 +1,9 @@
 # http://boxstarter.org/package/nr/url?https://raw.githubusercontent.com/CatenaLogic/Boxstarter/master/build_agent.txt
 
+# Tweaks
+#==============
+Move-LibraryDirectory "Personal" "$env:UserProfile\onedrive\documents"
+
 # Runtimes
 #==========
 cinst dotnet3.5
@@ -16,8 +20,8 @@ cinst treesizefree
 
 # Dev tools
 #===========
-cinst visualstudio2015professional 
-cinst xamarin-visualstudio
+cinst visualstudio2015professional
+#cinst xamarin-visualstudio
 cinst sqlserver2014express
 cinst git
 cinst notepadplusplus.install
@@ -57,7 +61,5 @@ cinst saxonhe
 Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -Full
-Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions -EnableShowFullPathInTitleBar
-Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
 
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
