@@ -5,16 +5,16 @@
 cinst dotnet3.5
 cinst dotnet4.0
 cinst dotnet4.5
-cinst silverlight5developerruntime
-cinst javaruntime
+#cinst silverlight5developerruntime
+#cinst javaruntime
 
 # General
 #=========
 cinst google-chrome-x64
 cinst greenshot
 cinst vlc
-cinst teamviewer
-cinst skype
+#cinst teamviewer
+#cinst skype
 cinst paint.net
 cinst inkscape -pre
 cinst 7zip
@@ -24,7 +24,7 @@ cinst dropbox
 # Dev tools
 #===========
 cinst visualstudio2015professional 
-cinst xamarin-visualstudio
+#cinst xamarin-visualstudio
 cinst sqlserver2014express
 cinst git
 cinst notepadplusplus.install
@@ -37,6 +37,7 @@ cinst innosetup
 cinst nunit
 cinst putty
 cinst fiddler4
+cinst wireshark
 #cinst finalbuilder
 
 # ANTS Performance Profiler / ANTS Memory Profiler / .NET Reflector
@@ -49,7 +50,7 @@ cinst ruby
 
 # SDKs
 #======
-cinst silverlight5sdk
+#cinst silverlight5sdk
 
 # Tweaks & config (see http://boxstarter.org/WinConfig)
 #=================
@@ -57,7 +58,7 @@ Enable-RemoteDesktop
 Enable-MicrosoftUpdate
 Install-WindowsUpdate -Full
 Set-ExplorerOptions -showHidenFilesFoldersDrives -showProtectedOSFiles -showFileExtensions -EnableShowFullPathInTitleBar
-Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
+#Set-StartScreenOptions -EnableBootToDesktop -EnableDesktopBackgroundOnStart -EnableShowStartOnActiveScreen -EnableShowAppsViewOnStartScreen -EnableSearchEverywhereInAppsView -EnableListDesktopAppsFirs
 
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Google\Chrome\Application\chrome.exe"
 Install-ChocolateyPinnedTaskBarItem "$($Boxstarter.programFiles86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe"
