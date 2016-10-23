@@ -33,6 +33,9 @@ cinst sqlserver2014express
 cinst git
 cinst notepadplusplus.install
 cinst resharper
+cinst dotpeek
+cinst dotmemory 
+cinst dottrace
 #cinst ghostdoc
 cinst beyondcompare
 cinst sourcetree
